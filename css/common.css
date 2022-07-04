@@ -1,0 +1,66 @@
+/* header */
+header {
+    height: 150px;
+}
+header nav ul {
+    display: flex;
+    font-size: 14px;
+    padding: 30px 50px;
+    position: fixed;
+    z-index: 100;
+}
+header nav ul li a {
+    padding: 10px 20px;
+}
+header nav ul li:hover a {
+    color: #f0ede8;
+    background-color: #333;
+    transition: 0.3s ease-out;
+}
+header nav ul li:not(:hover) a {
+    transition: 0.3s ease-out;
+}
+
+header .name {
+    font-size: 14px;
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    cursor: pointer;
+    z-index: 10;
+}
+header .heart {
+    display: none;
+    font-size: 14px;
+    position: fixed;
+    top: 62px;
+    right: 50px;
+    z-index: 10;
+}
+header i {
+    color: #E88296;
+    animation: beating 1s ease-in-out infinite;
+}
+@keyframes beating {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+/* footer */
+footer {
+    height: 54px;
+    background-color: #303030;
+    color: #e4aeb9;
+    font-size: 13px;
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: 1px;
+    line-height: 54px;
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Gothic+A1:wght@200;300&family=Inconsolata:wght@300;400&display=swap');
+
+/* reset */
+* {
+  box-sizing: border-box;
+  cursor: default;
+}
+.hide {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: 'Cormorant', serif;
+    font-family: 'Gothic A1', sans-serif;
+    background-color: #f0ede8;
+}
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background: #E88296;
+}
