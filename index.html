@@ -19,15 +19,19 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <div class="wrap">
     <header>
         <nav>
             <button class="btn-nav"><span class="hide">NAVIGATION</span></button>
-            <ul>
-                <li><a href="index.html">ABOUT</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#portfolio">WORKS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
+            <div class="bg-nav">
+              <button class="btn-nav-close"></button>
+              <ul>
+                  <li><a href="index.html">ABOUT</a></li>
+                  <li><a href="#skills">SKILLS</a></li>
+                  <li><a href="#portfolio">WORKS</a></li>
+                  <li><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
         </nav>
         <p class="name">MINSEO KWAK</p>
         <span class="heart">MADE WITH <i class="fa fa-heart"></i></span>
@@ -160,7 +164,8 @@
         </div>
       </div>
     </section>
-      
+  </div>
+
     <footer>
       <p>ALL &copy;RIGHTS TO MINSEO KWAK</p>
     </footer>
@@ -173,6 +178,7 @@
     <script src="https://kit.fontawesome.com/e3078e7ac7.js" crossorigin="anonymous"></script>
 
     <!-- Main JS File -->
+    <script src="js/common.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
