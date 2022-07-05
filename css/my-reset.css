@@ -36,6 +36,9 @@ button {
   font: inherit;
   color: inherit;
 }
+button:focus {
+  outline: none;
+}
 html {
   scroll-behavior: smooth;
 }

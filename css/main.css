@@ -1,7 +1,8 @@
-/* MAIN */
+/* ---- MAIN ---- */
+/* mobile */
 #main {
   font-family: 'Cormorant', serif;
-  font-size: 80px;
+  font-size: 60px;
 }
 #main .middle {
   padding-top: 16px;
@@ -21,7 +22,15 @@
   letter-spacing: -1px;
 }
 
-/* SKILLS */
+/* tablet, pc */
+@media screen and (min-width: 768px) {
+  #main {
+    font-size: 80px;
+  }
+}
+
+
+/* ---- SKILLS ---- */
 #skills {
   text-align: right;
   padding-top: 100px;
@@ -107,8 +116,7 @@
   padding: 4px;
 }
 
-
-/* PORTFOLIO */
+/* ---- PORTFOLIO ---- */
 #portfolio {
   padding-top: 100px;
   clear: both;
@@ -238,7 +246,7 @@
 }
 
 
-/* CONTACT */
+/* ---- CONTACT ---- */
 #contact {
   text-align: center;
   padding-top: 100px;
