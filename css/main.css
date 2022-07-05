@@ -2,7 +2,7 @@
 /* mobile */
 #main {
   font-family: 'Cormorant', serif;
-  font-size: 60px;
+  font-size: 50px;
 }
 #main .middle {
   padding-top: 16px;
@@ -12,8 +12,8 @@
 }
 #main .line2 {
   display: inline-block;
-  width: 300px;
-  height: 100px;
+  width: 100%;
+  padding-bottom: 16px;
   font-family: 'Gothic A1', sans-serif;
   font-size: 16px;
   line-height: 1.3em;
@@ -27,15 +27,18 @@
   #main {
     font-size: 80px;
   }
+  #main .line2 {
+    width: 300px;
+  }
 }
 
 
 /* ---- SKILLS ---- */
+/* mobile */
 #skills {
   text-align: right;
   padding-top: 100px;
 }
-
 #skills .sk_intro,
 #portfolio .pf_intro,
 #contact .ct_intro {
@@ -44,24 +47,22 @@
   display: inline-block;
   position: relative;
 }
-
 #skills h3 {
-  padding-top: 16px;
-  letter-spacing: -1px;
+  display: none;
 }
 
 #skills .list {
   font-family: 'Inconsolata', monospace;
   padding-top: 48px;
   margin: 0 auto;
+}
+#skills .list .i_list {
+  width: 100%;
   position: relative;
 }
-
-#skills .list > li {
-  float: right;
-  padding-left: 8%;
+#skills .list .i_list:not(:last-child) {
+  padding-bottom: 50px;
 }
-
 #skills .list li img {
   border-radius: 50px;
   margin-bottom: 10px;
@@ -70,13 +71,21 @@
   padding: 8px;
   box-sizing: content-box;
 }
+#skills .list li img:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #E88296;
+}
+#skills .sub li {
+  padding: 4px 0;
+}
 
 .arrow_box {
-  display: none;
   position: absolute;
-  width: 300px;
+  width: 70%;
   padding: 16px;
-  right: 550px;
+  top: 20px;
+  /* right: 5px; */
   border-radius: 8px;
   background: #333;
   color: #fff;
@@ -102,19 +111,59 @@
   content: ' ';
 }
 
-#skills .list li img:hover {
-  cursor: pointer;
-  transition: 0.3s;
-  background-color: #E88296;
+/* tablet, pc */
+@media screen and (min-width: 768px) {
+  #skills h3 {
+    padding-top: 16px;
+    letter-spacing: -1px;
+  }
+  #skills .list .i_list {
+    width: 160px;
+    float: right;
+  }
+  
+  .arrow_box {
+    display: none;
+    position: absolute;
+    width: 300px;
+    padding: 16px;
+    right: 550px;
+    border-radius: 8px;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Gothic A1', sans-serif;
+    line-height: 1.4em;
+    text-align: justify;
+    letter-spacing: -1px;
+  }
+  
+  .arrow_box:after {
+    position: absolute;
+    bottom: 50%;
+    right: -20px;
+    transform: rotate(90deg);
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+    border: solid transparent;
+    border-color: rgba(51, 51, 51, 0);
+    border-bottom-color: #333;
+    border-width: 10px;
+    content: ' ';
+  }
+  
+  
+  
+  /* #skills .list li img:hover + p.arrow_box {
+    display: block;
+  } */
+  
+  
 }
 
-/* #skills .list li img:hover + p.arrow_box {
-  display: block;
-} */
 
-#skills .sub li {
-  padding: 4px;
-}
+
 
 /* ---- PORTFOLIO ---- */
 #portfolio {

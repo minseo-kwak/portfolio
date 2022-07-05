@@ -28,36 +28,22 @@ $(function(){
 	  siteIstotope();
 	});
 
-	$('.name').mouseover(function(){
-		$(this).stop().css({'transform':'scaleY(-1)', 'transition':'0.8s'})
+	$('.name').hover(function(){
+		$(this).stop().css({'transform':'scaleY(-1)', 'transition':'0.8s'});
 		$('.heart').stop().fadeIn(800);
-	});
-	$('.name').mouseout(function(){
+	}, function(){
 		$(this).stop().css({'transform':'scaleY(1)', 'transition':'0.8s'})
 		$('.heart').stop().fadeOut(800);
-	});
+	})
 
 	//hover animation
-	$('.list .design img').mouseover(function(){
-		$('.box01').stop().fadeIn(500);
-	});
-	$('.list .design img').mouseout(function(){
-		$('.box01').stop().fadeOut(500);
-	});
-
-	$('.list .framework img').mouseover(function(){
-		$('.box02').stop().fadeIn(500);
-	});
-	$('.list .framework img').mouseout(function(){
-		$('.box02').stop().fadeOut(500);
-	});
-
-	$('.list .code img').mouseover(function(){
-		$('.box03').stop().fadeIn(500);
-	});
-	$('.list .code img').mouseout(function(){
-		$('.box03').stop().fadeOut(500);
-	});
+	if($(window).width() > 768) {
+		$('.list .i_list img').hover(function(){
+			$(this).siblings('.arrow_box').fadeIn(500);
+		}, function(){
+			$(this).siblings('.arrow_box').fadeOut(500);
+		});
+	}
 	
 });
 
