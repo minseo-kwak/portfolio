@@ -1,0 +1,218 @@
+body {
+    background-color: #c1c4b8;
+}
+/* ---- HEADER ---- */
+/* mobile */
+header .btn-back {
+    position: fixed;
+    width: 27px;
+    height: 16px;
+    z-index: 100;
+    padding: 20px 0;
+    margin-top: 30px;
+
+    background-image: url(../img/i_back.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header nav ul {
+    display: none;
+}
+
+/* tablet, pc */
+@media screen and (min-width: 768px) {
+    header .btn-back {
+        display: none;
+    }
+    header nav ul {
+        display: block;
+    }
+}
+
+/* SECTION */
+/* mobile */
+section {
+    width: 100%;
+}
+#project {
+    text-align: center;
+}
+#project h2 {
+    font-family: 'Cormorant', serif;
+    font-size: 80px;
+}
+#project img {
+    width: 1000px;
+    padding: 20px 0;
+}
+.project-info {
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+}
+.project-info p {
+    text-align: left;
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+.project-info .progress {
+    height: 10px;
+    border-radius: 0;
+    background-color: #f0ede8;
+}
+.project-info .progress-bar {
+    background-color: #333;
+    animation: bar-animation 1.5s ease;
+    animation-fill-mode: forwards;
+}
+@keyframes bar-animation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.project-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-link a {
+    text-align: center;
+    width: 190px;
+    padding: 20px 10px;
+    margin: 0 10px;
+    border: 1.2px solid #333;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+.project-link .site:hover,
+.project-link .process:hover {
+    background-color: #333;
+    color: #f0ede8;
+}
+
+#description {
+    text-align: center;
+}
+#description h3 {
+    font-family: 'Cormorant', serif;
+    font-size: 50px;
+}
+#description h4 {
+    font-family: 'Inconsolata', monospace;
+    padding-top: 20px;
+}
+#description p {
+    margin: auto;
+    letter-spacing: -1px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+.description-1 {
+    padding-top: 20px;
+}
+.description-1 p {   
+    padding: 60px 0 200px 0;
+}
+
+.description-2 > div {
+    margin: auto;
+    padding: 60px 0;
+}
+.description-2 > div p {
+    text-align: left;
+    padding-bottom: 30px;
+}
+.description-2 > div p:last-child {
+    padding-bottom: 140px;
+}
+.description-2 > div p span {
+    display: block;
+    font-family: 'Cormorant', serif;
+    font-size: 18px;
+    text-align: right;
+    text-decoration: underline;
+    padding-bottom: 8px;
+}
+.description-2 .color-chips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.description-2 .color-chips li {
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+}
+.description-2 .color-chips li:hover {
+    cursor: crosshair;
+}
+.description-2 .color-chips .primary-color {
+    background-color: #E88296;
+}
+.description-2 .color-chips .secondary-color {
+    background-color: #264A46;
+}
+
+.description-3 {
+    padding-top: 100px;
+}
+
+.description-3 .main {
+    padding-bottom: 100px;
+}
+.description-3 .main img {
+    width: 350px;
+}
+.description-3 .main h3 {
+    transform: rotate(90deg);
+}
+.description-3 .sub01 {
+    padding: 100px 0;
+    background-color: #646E64;
+    position: relative;
+}
+.description-3 .sub01 h3 {
+    position: absolute;
+    top: 100px;
+    right: 5%;
+    color: #fff;
+    font-size: 30px !important;
+}
+
+.description-3 .sub02 {
+    height: 600px;
+    background-image: url(../img/project01/img05-bg@2x.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description-3 .sub02 img {
+    width: 380px;
+}
+
+/* tablet, pc */
+@media screen and (min-width: 768px) {
+    .description-2 > div {
+        width: 600px;
+    }
+    .description-2 > div p span {
+        padding-bottom: 4px;
+    }
+    .description-3 .main img {
+        width: 600px;
+    }
+    .description-3 .sub01 h3 {
+        font-size: 50px !important;
+    }
+    .description-3 .sub02 img {
+        width: 600px;
+    }
+}

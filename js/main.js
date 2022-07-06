@@ -28,14 +28,6 @@ $(function(){
 	  siteIstotope();
 	});
 
-	$('.name').hover(function(){
-		$(this).stop().css({'transform':'scaleY(-1)', 'transition':'0.8s'});
-		$('.heart').stop().fadeIn(800);
-	}, function(){
-		$(this).stop().css({'transform':'scaleY(1)', 'transition':'0.8s'})
-		$('.heart').stop().fadeOut(800);
-	})
-
 	//hover animation
 	if($(window).width() >= 768) {
 		$('.list .i_list img').hover(function(){
@@ -45,10 +37,4 @@ $(function(){
 		});
 	}
 	
-});
-
-AOS.init({
-	easing: 'ease',
-	duration: 1000,
-	once: true
 });

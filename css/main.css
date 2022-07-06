@@ -2,6 +2,7 @@
 /* mobile */
 #main {
   font-family: 'Cormorant', serif;
+  font-weight: 300;
   font-size: 50px;
 }
 #main .middle {
@@ -142,14 +143,15 @@
   position: relative;
 }
 #portfolio h3 {
-  padding: 16px 0 48px 0;
+  padding: 16px 0 28px 0;
   letter-spacing: -1px;
   line-height: 1.6em;
 }
 .filtering {
-  position: absolute;
+  /* position: absolute;
   top: 210px;
-  right: 0;
+  right: 0; */
+  margin-bottom: 20px;
   padding: 0;
 }
 .filters a {
@@ -267,11 +269,15 @@
 
 /* tablet, pc */
 @media screen and (min-width: 768px) {
+  #portfolio h3 {
+    padding: 16px 0 48px 0;
+  }
   .filtering {
     position: absolute;
-    top: 180px;
+    top: 190px;
     right: 0;
     padding: 0;
+    margin-bottom: 0px;
   }
 }
 
