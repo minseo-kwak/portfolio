@@ -37,7 +37,7 @@ $(function(){
 	})
 
 	//hover animation
-	if($(window).width() > 768) {
+	if($(window).width() >= 768) {
 		$('.list .i_list img').hover(function(){
 			$(this).siblings('.arrow_box').fadeIn(500);
 		}, function(){
