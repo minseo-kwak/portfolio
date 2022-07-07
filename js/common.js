@@ -18,9 +18,9 @@ $(function(){
         })
     }
 
-    $(window).resize(function(){
-        location.reload();
-    });
+    // $(window).resize(function(){
+    //     location.reload();
+    // });
     
     // 메뉴 스크롤 막기
 	$('.bg-nav').on('scroll touchmove mousewheel', function(event) {
