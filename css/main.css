@@ -148,9 +148,6 @@
   line-height: 1.6em;
 }
 .filtering {
-  /* position: absolute;
-  top: 210px;
-  right: 0; */
   margin-bottom: 20px;
   padding: 0;
 }
@@ -238,6 +235,7 @@
 .item .item-wrap > .work-info h3 {
   font-size: 20px;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .item .item-wrap > .work-info span {

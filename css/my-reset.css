@@ -41,7 +41,7 @@ button:focus {
 }
 html {
   scroll-behavior: smooth;
-  overscroll-behavior: contain;
+  overscroll-behavior: contain !important;
 }
 ::selection {
   background: #E88296;
