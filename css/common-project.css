@@ -187,7 +187,7 @@ section {
 
 .description-3 .sub02 {
     height: 600px;
-    background-image: url(../img/project01/img05-bg@2x2.png);
+    background-image: url(../img/project01/img05-bg@2x.png);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -195,6 +195,16 @@ section {
 }
 .description-3 .sub02 img {
     width: 380px;
+}
+.description-4 {
+    background-color: #646E64;
+    padding: 70px;
+    font-family: 'Inconsolata', monospace;
+    color: #c1c4b8;
+} 
+.description-4 > p {
+    font-size: 13px !important;
+    letter-spacing: 1px !important;
 }
 
 /* tablet, pc */
