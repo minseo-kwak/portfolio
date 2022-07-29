@@ -1,0 +1,113 @@
+body {
+    background-color: #cbbfb1;
+}
+
+/* SECTION */
+/* mobile */
+#project img {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.description-1 p a {
+    display: inline;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+.description-1 p a:hover {
+    background-color: #6C5B5B;
+    color: #fff;
+}
+
+.description-2 .color-chips li {
+    border: 1px solid #333;
+}
+.description-2 .color-chips .primary-color {
+    background-color: #6C5B5B;
+}
+.description-2 .color-chips .secondary-color {
+    background-color: #d3c4b2;
+}
+.description-2 .color-chips .third-color {
+    background-color: #EFE4D8;
+}
+.description-2 > div p:last-child {
+    padding-bottom: 50px;
+}
+
+.description-3 {
+    padding: 0;
+}
+.description-3 .slogan {
+    position: relative;
+}
+.description-3 .slogan h3 {
+    font-size: 24px !important;
+    text-align: right;
+    padding-right: 30px;
+    color: #6C5B5B;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.description-3 .slogan svg {
+    display: none;
+}
+.description-3 .slogan img {
+    width: 100%;
+}
+.description-3 .sub01 {
+    background-color: #a99e92;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.description-3 .sub01 img {
+    width: 80%;
+}
+.description-3 .sub01 p {
+    font-family: 'Cormorant', serif;
+    font-size: 30px !important;
+    color: #6C5B5B;
+}
+.description-3 .sub02 {
+    height: 500px;
+    background-image: url(../img/project02/moodboard.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description-3 .sub02 p {
+    font-family: 'Cormorant', serif;
+    font-size: 70px !important;
+    color: #EFE4D8;
+}
+.description-4 {
+    background-color: #a99e92;
+}
+
+/* tablet, pc */
+@media screen and (min-width: 768px) {
+    .description-3 .slogan {
+        position: relative;
+    }
+    .description-3 .slogan h3 {
+        display: none;
+    }
+    .description-3 .slogan svg {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 500px;
+    }
+    .description-3 .slogan text {
+        font-family: 'Cormorant', serif;
+        font-size: 33px;
+        fill: #6C5B5B;
+    }
+    .description-3 .slogan img {
+        width: 80%;
+    }
+}

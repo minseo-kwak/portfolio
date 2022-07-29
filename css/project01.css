@@ -1,0 +1,68 @@
+body {
+    background-color: #c1c4b8;
+}
+
+.description-2 .color-chips .primary-color {
+    background-color: #E88296;
+}
+.description-2 .color-chips .secondary-color {
+    background-color: #264A46;
+}
+
+.description-3 {
+    padding-top: 100px;
+}
+
+.description-3 .sub01 {
+    padding: 100px 0;
+}
+.description-3 .main {
+    padding-bottom: 100px;
+}
+
+.description-3 .main img {
+    width: 350px;
+}
+.description-3 .main h3 {
+    transform: rotate(90deg);
+}
+.description-3 .sub01 {
+    background-color: #646E64;
+    position: relative;
+}
+.description-3 .sub01 h3 {
+    position: absolute;
+    top: 100px;
+    right: 5%;
+    color: #fff;
+    font-size: 30px !important;
+}
+.description-3 .sub02 {
+    height: 600px;
+    background-image: url(../img/project01/img05-bg@2x.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description-3 .sub02 img {
+    width: 380px;
+}
+
+.description-4 {
+    background-color: #646E64;
+    color: #c1c4b8;
+} 
+
+/* tablet, pc */
+@media screen and (min-width: 768px) {
+    .description-3 .main img {
+        width: 600px;
+    }
+    .description-3 .sub01 h3 {
+        font-size: 50px !important;
+    }
+    .description-3 .sub02 img {
+        width: 600px;
+    }
+}
