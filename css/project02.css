@@ -50,7 +50,7 @@ body {
     line-height: 1.5;
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 0;
 }
 .description-3 .slogan svg {
     display: none;
@@ -60,8 +60,8 @@ body {
 }
 .description-3 .sub01 {
     background-color: #a99e92;
-    padding-top: 30px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .description-3 .sub01 img {
     width: 80%;

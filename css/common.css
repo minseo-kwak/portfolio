@@ -37,6 +37,7 @@ header .btn-nav-close {
     margin-left: 5%;
 
     background-image: url(../img/i_close.svg);
+    background-repeat: no-repeat;
     background-size: contain;
 }
 header .bg-nav {
