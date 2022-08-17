@@ -42,11 +42,11 @@ body {
     position: relative;
 }
 .description-3 .slogan h3 {
-    font-size: 24px !important;
+    font-size: 18px !important;
     text-align: right;
     padding-right: 30px;
     color: #6C5B5B;
-    letter-spacing: 3px;
+    letter-spacing: 0.6px;
     line-height: 1.5;
     position: absolute;
     right: 0;
@@ -64,7 +64,7 @@ body {
     padding-bottom: 80px;
 }
 .description-3 .sub01 img {
-    width: 80%;
+    width: 100%;
 }
 .description-3 .sub01 p {
     font-family: 'Cormorant', serif;

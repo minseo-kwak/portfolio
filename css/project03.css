@@ -1,0 +1,17 @@
+body {
+    background-color: #d8b7b7;
+}
+
+/* SECTION */
+.project-link a {
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .project-link a {
+        width: 396px;
+    }
+}
+
+.description-1 {
+    padding: 0;
+}
