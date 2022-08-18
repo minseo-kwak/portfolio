@@ -3,15 +3,99 @@ body {
 }
 
 /* SECTION */
+/* mobile */
 .project-link a {
     width: 100%;
 }
+
+
+.description-1 {
+    padding: 0;
+}
+.description-2 .color-chips li {
+    border: 1px solid #333;
+    border-radius: 30px;
+}
+.description-2 .color-chips .primary-color {
+    background-color: #DDABAA;
+}
+.description-2 .color-chips .secondary-color {
+    background-color: #EBD7D7;
+}
+.description-2 .color-chips .third-color {
+    background-color: #F2EFEF;
+}
+.description-2 > div p:last-child {
+    padding-bottom: 50px;
+}
+
+.description-3 .sub01 {
+    height: 200px;
+    background-image: url(../img/project03/visual.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+}
+.description-3 .sub02 {
+    padding-bottom: 100px;
+}
+.description-3 .sub02 img {
+    width: 100%;
+}
+.description-3 .sub03 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.description-3 .sub03 h3 {
+    margin-bottom: 40px;
+}
+.description-3 .sub03 .flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.description-3 .sub03 .magazine {
+    width: 320px;
+    height: 628px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+}
+.description-3 .sub03 .magazine .inner-screen {
+    border: 10px solid #393939;
+    height: 100%;
+    border-radius: 50px;
+    overflow-y: scroll;
+}
+.description-3 .sub03 .magazine .inner-screen::-webkit-scrollbar {
+    display: none;
+}
+.description-3 .sub03 .magazine .inner-screen img {
+    border-radius: 40px;
+}
+.description-3 .sub03 .screen01 {
+    margin-bottom: 50px;
+}
+
+/* pc, tablet */
 @media screen and (min-width: 768px) {
     .project-link a {
         width: 396px;
     }
-}
-
-.description-1 {
-    padding: 0;
+    .description-3 .sub01 {
+        height: 300px;
+    }
+    .description-3 .sub02 img {
+        width: 80%;
+    }
+    .description-3 .sub03 h3 {
+        margin-right: 50px;
+    }
+    .description-3 .sub03 .screen01 {
+        margin-right: 20px;
+        margin-bottom: 100px;
+    }
 }
