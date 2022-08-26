@@ -280,6 +280,79 @@
   }
 }
 
+/* --- 디자인 슬라이드 박스 --- */
+#design-box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 200;
+
+  display: none;
+  align-items: center;
+}
+.swiper {
+  width: 60%;
+  height: 70%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+}
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 2px;
+  border-radius: 0px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.swiper-pagination-bullet-active {
+  color: #f0ede8;
+  background: #f0ede8;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  transition: 0.5s;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 0.8;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #333;
+  background-color: #f0ede8;
+  font-size: 16px;
+  border-radius: 50px;
+}
+.swiper-button-next:after {
+  padding: 11px 14px 11px 16px;
+}
+.swiper-button-prev:after {
+  padding: 11px 16px 11px 14px;
+}
 
 /* ---- CONTACT ---- */
 #contact {

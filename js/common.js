@@ -23,7 +23,7 @@ $(function(){
     // });
     
     // 메뉴 스크롤 막기
-	$('.bg-nav').on('scroll touchmove mousewheel', function(event) {
+	$('.bg-nav, #design-box').on('scroll touchmove mousewheel', function(event) {
 		event.preventDefault();
 		event.stopPropagation();
 		return false;

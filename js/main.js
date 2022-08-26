@@ -28,6 +28,16 @@ $(function(){
 	  siteIstotope();
 	});
 
+	//디자인 박스
+	$('.banner-design').click(function(){
+		$('#design-box').fadeIn().css({'display':'flex'});
+	});
+	$(document).mouseup(function (e){
+		if($("#design-box").has(e.target).length === 0){
+			$("#design-box").fadeOut();
+		}
+	});
+
 	//hover animation
 	if($(window).width() >= 768) {
 		$('.list .i_list img').hover(function(){
@@ -36,5 +46,36 @@ $(function(){
 			$(this).siblings('.arrow_box').fadeOut(500);
 		});
 	}
-	
 });
+
+// var slide = new Swiper(".newArrival", {
+// 	cssMode: true,
+// 	slidesPerView: 1,
+// 	spaceBetween: 20,
+// 	loop: true,
+// 	navigation: {
+// 		nextEl: ".swiper-button-next",
+// 		prevEl: ".swiper-button-prev",
+// 	},
+// 	pagination: {
+// 		el: ".newArrival .swiper-pagination",
+// 		clickable: true,
+// 	},
+// 	mousewheel: true,
+// 	keyboard: true,
+// 	});
+
+var swiper = new Swiper(".mySwiper", {
+	cssMode: true,
+	loop: true,
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+	mousewheel: true,
+	keyboard: true,
+  });
