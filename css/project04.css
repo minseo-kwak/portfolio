@@ -3,13 +3,6 @@ header .btn-back {
 }
 body {
     background-color: #A36060;
-    /* background-color: #9a5656; */
-    /* background-color: #7d2d2d; */
-
-    /* background-color: #913a4a; */
-
-    /* background-color: #7f3241; */
-
     color: #f0ede8;
 }
 
@@ -34,7 +27,7 @@ header nav ul li:hover a {
 }
 #project img {
     width: 100%;
-    padding: 0;
+    padding: 60px 0 30px 0;
 }
 
 .description-1 p a {
@@ -58,9 +51,9 @@ header nav ul li:hover a {
     width: 80%;
 }
 .description-2 .mobile-shot-1 {
-    width: 30%;
+    width: 180px;
     position: absolute;
-    bottom: 100px;
+    bottom: 30px;
     right: 0px;
 }
 
@@ -93,6 +86,10 @@ header nav ul li:hover a {
     .project-link a {
         width: 396px;
     }
+    #project img {
+        width: 100%;
+        padding: 0;
+    }
     .description-2 .full-shot {
         width: 60%;
     }
@@ -103,7 +100,6 @@ header nav ul li:hover a {
         right: 50px;
     }
 }
-
 
 /* FOOTER */
 footer {
