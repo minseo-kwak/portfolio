@@ -1,0 +1,103 @@
+header .btn-back {
+    background-image: url(../img/i_back_w.svg);
+}
+body {
+    background-color: #A36060;
+    /* background-color: #9a5656; */
+    /* background-color: #7d2d2d; */
+
+    /* background-color: #913a4a; */
+
+    /* background-color: #7f3241; */
+
+    color: #f0ede8;
+}
+
+/* SECTION */
+/* mobile */
+#project h2 {
+    margin-bottom: 10px;
+}
+.project-info .progress {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.project-info .progress-bar {
+    background-color: #f0ede8;
+}
+.project-link a {
+    border: 1.2px solid #f0ede8;
+    width: 100%;
+}
+.project-link .site:hover,
+header nav ul li:hover a {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#project img {
+    width: 100%;
+    padding: 0;
+}
+
+.description-1 p a {
+    display: inline;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+.description-1 p a:hover {
+    background-color: #f0ede8;
+    color: #333;
+}
+
+.description-2 {
+    position: relative;
+}
+.description-2 h3 {
+    margin-bottom: 40px;
+}
+.description-2 .full-shot {
+    width: 60%;
+}
+.description-2 .mobile-shot-1 {
+    width: 24%;
+    position: absolute;
+    bottom: 130px;
+    right: 50px;
+}
+
+.description-3 {
+    width: 100%;
+}
+.animated-title {
+    letter-spacing: 0.08em;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 60px 0; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.animated-title .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 40s linear infinite;
+}
+@keyframes marquee {
+    from {transform: translateX(0);}
+    to {transform: translateX(-50%);}
+}
+
+/* pc, tablet */
+@media screen and (min-width: 768px) {
+    .project-link a {
+        width: 396px;
+    }
+}
+
+
+/* FOOTER */
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #f0ede8;
+}
