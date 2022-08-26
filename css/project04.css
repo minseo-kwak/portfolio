@@ -55,13 +55,13 @@ header nav ul li:hover a {
     margin-bottom: 40px;
 }
 .description-2 .full-shot {
-    width: 60%;
+    width: 80%;
 }
 .description-2 .mobile-shot-1 {
-    width: 24%;
+    width: 30%;
     position: absolute;
-    bottom: 130px;
-    right: 50px;
+    bottom: 100px;
+    right: 0px;
 }
 
 .description-3 {
@@ -92,6 +92,15 @@ header nav ul li:hover a {
 @media screen and (min-width: 768px) {
     .project-link a {
         width: 396px;
+    }
+    .description-2 .full-shot {
+        width: 60%;
+    }
+    .description-2 .mobile-shot-1 {
+        width: 24%;
+        position: absolute;
+        bottom: 130px;
+        right: 50px;
     }
 }
 
