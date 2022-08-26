@@ -139,7 +139,7 @@
 /* ---- PORTFOLIO ---- */
 /* mobile */
 #portfolio {
-  padding-top: 100px;
+  padding-top: 130px;
   clear: both;
   position: relative;
 }
@@ -294,7 +294,7 @@
   align-items: center;
 }
 .swiper {
-  width: 60%;
+  width: 95%;
   height: 70%;
 }
 .swiper-slide {
@@ -317,7 +317,7 @@
 }
 .swiper-slide img {
   display: block;
-  width: 85%;
+  width: 75%;
   height: 85%;
   object-fit: contain;
 }
@@ -353,6 +353,21 @@
 .swiper-button-prev:after {
   padding: 11px 16px 11px 14px;
 }
+
+/* tablet, pc */
+@media screen and (min-width: 768px) {
+  .swiper {
+    width: 60%;
+    height: 70%;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+  }
+}
+
 
 /* ---- CONTACT ---- */
 #contact {
