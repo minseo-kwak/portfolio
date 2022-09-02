@@ -48,23 +48,6 @@ $(function(){
 	}
 });
 
-// var slide = new Swiper(".newArrival", {
-// 	cssMode: true,
-// 	slidesPerView: 1,
-// 	spaceBetween: 20,
-// 	loop: true,
-// 	navigation: {
-// 		nextEl: ".swiper-button-next",
-// 		prevEl: ".swiper-button-prev",
-// 	},
-// 	pagination: {
-// 		el: ".newArrival .swiper-pagination",
-// 		clickable: true,
-// 	},
-// 	mousewheel: true,
-// 	keyboard: true,
-// 	});
-
 var swiper = new Swiper(".mySwiper", {
 	cssMode: true,
 	loop: true,
