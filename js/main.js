@@ -15,11 +15,11 @@ $(function(){
 		
 		$container.isotope({ filter: '*' });
   
-		$('#filters').on('click', 'a', function(e){
+		$('#filters').on('click', 'li', function(e){
 		  e.preventDefault();
 		  var filterValue = $(this).attr('data-filter');
 		  $container.isotope({ filter: filterValue });
-		  $('#filters a').removeClass('active');
+		  $('#filters li').removeClass('active');
 		  $(this).addClass('active');
 		});
 	}

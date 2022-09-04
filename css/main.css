@@ -152,20 +152,21 @@
   margin-bottom: 20px;
   padding: 0;
 }
-.filters a {
+.filters li {
   color: #333;
   display: inline-block;
   padding: 0 10px;
   position: relative;
+  cursor: pointer;
 }
 
-.filters a:hover,
-.filters a:focus,
-.filters a:active {
+.filters li:hover,
+.filters li:focus,
+.filters li:active {
   text-decoration: none;
 }
 
-.filters a:hover:before {
+.filters li:hover:before {
   content: "";
   position: absolute;
   left: 10px;
@@ -175,11 +176,11 @@
   background-color: #333;
 }
 
-.filters a.active {
+.filters li.active {
   color: #333;
 }
 
-.filters a.active:before {
+.filters li.active:before {
   content: "";
   position: absolute;
   left: 10px;
