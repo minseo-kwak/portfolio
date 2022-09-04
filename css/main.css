@@ -292,6 +292,7 @@
 
   display: none;
   align-items: center;
+  user-select: none;
 }
 .swiper {
   width: 95%;
