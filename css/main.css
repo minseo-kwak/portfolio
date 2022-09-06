@@ -6,7 +6,8 @@
   font-size: 50px;
 }
 #main .middle {
-  padding-top: 16px;
+  /* padding-top: 16px; */
+  padding-top: 8px;
 }
 #main .line1 span {
   background-color: #E88296;
@@ -14,13 +15,16 @@
 #main .line2 {
   display: inline-block;
   width: 100%;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   font-family: 'Gothic A1', sans-serif;
   font-size: 16px;
-  line-height: 1.3em;
+  line-height: 1.35em;
   text-align: justify;
   vertical-align: middle;
   letter-spacing: -1px;
+}
+#main .line1, .line3, .line4 {
+  line-height: 1.05;
 }
 
 /* tablet, pc */
