@@ -2,6 +2,7 @@ header .btn-back {
     background-image: url(../img/i_back_w.svg);
 }
 body {
+    /* background-color: #A36060; */
     background-color: #A36060;
     color: #f0ede8;
 }
@@ -23,7 +24,8 @@ body {
 }
 .project-link .site:hover,
 header nav ul li:hover a {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #f0ede8;
+    color: #a47171;
 }
 #project img {
     width: 100%;
@@ -99,10 +101,4 @@ header nav ul li:hover a {
         bottom: 130px;
         right: 50px;
     }
-}
-
-/* FOOTER */
-footer {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #f0ede8;
 }
