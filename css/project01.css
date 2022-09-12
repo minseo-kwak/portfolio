@@ -46,7 +46,8 @@ body {
     align-items: center;
 }
 .description-3 .sub02 img {
-    width: 380px;
+    /* width: 380px; */
+    width: 80%;
 }
 
 .description-4 {
