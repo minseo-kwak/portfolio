@@ -61,6 +61,7 @@ body {
 }
 .description-3 h3 {
     position: absolute;
+    display: block;
     color: #fff;
     top: -46px;
     mix-blend-mode: difference;
